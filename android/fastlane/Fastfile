@@ -41,13 +41,4 @@ platform :android do
     upload_to_play_store
   end
 
-  desc "Builds and test the app"
-  lane :build_and_test do |options|
-    scheme: _project_scheme,
-    code_coverage: true
-    derived_data_path: _derived_data_path,
-    output_directory: _reports_path,
-    skip_build: true,
-    clean: true
-
 end
